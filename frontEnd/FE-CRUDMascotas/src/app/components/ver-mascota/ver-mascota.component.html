@@ -1,0 +1,26 @@
+<div class="title">
+    <h1>Ver mascota</h1>
+</div>
+
+<app-spinner *ngIf="loading"></app-spinner>
+
+<div *ngIf="mascota != null" class="container">
+    <!-- <mat-card *ngIf="mascota$ | async as mascota" class="card"> PIPE ASYNC--> 
+    <mat-card class="card">
+        <!--{{mascota | json }}Visualizar el json que viene del backend-->
+        <mat-card-title>{{ mascota.nombre }}</mat-card-title>
+        <mat-card-content>
+            <p><strong>Raza: </strong> {{mascota.raza}} </p>
+            <p><strong>Color: </strong> {{mascota.color}} </p>
+            <p><strong>Peso: </strong> {{mascota.peso}} Kg</p>
+            <p><strong>Edad: </strong> {{mascota.edad}} Años</p>
+        </mat-card-content>
+        <mat-card-actions>
+            <div class="home">
+                <button routerLink="/listaMascotas" mat-fab color="primary">
+                    <mat-icon>home</mat-icon>
+                </button>
+            </div>
+        </mat-card-actions>
+    </mat-card>
+</div>

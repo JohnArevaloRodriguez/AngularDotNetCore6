@@ -1,0 +1,22 @@
+td, th{
+    width: 15%;
+}
+.mat-mdc-form-field {
+    font-size: 14px;
+    width: 100%;
+}
+.icon{
+    cursor: pointer;
+    display: flex;
+    gap: 4px;
+}
+.delete{
+    color: #e15639;
+}
+.edit{
+    color: #187880;
+}
+.agregar{
+    font-size: 10px;
+    line-height: 28px;
+}

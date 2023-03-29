@@ -1,0 +1,14 @@
+.card{
+    margin-top: 10px;
+}
+mat-card-subtitle{
+    margin: 10px;
+    font-size: 20px;
+}
+mat-form-field{
+    width: 100%;
+    margin: 5px;
+}
+button{
+    margin: 4px;
+}
